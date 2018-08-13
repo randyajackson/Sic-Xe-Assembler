@@ -22,3 +22,38 @@ and the object program having .obj extension.
 -The program does common types of error-checks such as incorrect
 spelling of a mnemonic, label not defined, inability to assemble because
 displacement is out of range etc.
+
+Example Input Code:
+
+INIT_ARRAY		START 100
+
+			LDA ZERO
+			STA VALUE2ST
+			
+			LDA ZERO
+			STA INDEX
+			LDX INDEX
+
+LOOP_START		LDA VALUE2ST
+			ADD ZERO
+			STA VALUE2ST
+
+			LDX INDEX
+			STA ALPHA,X
+
+			LDA INDEX
+			ADD THREE
+			STA INDEX
+			COMP THREEHUNDO
+
+			JLT LOOP_START
+
+VALUE2ST			RESW 1
+INDEX			RESW 1
+ALPHA			RESW 100
+
+ZERO			WORD 0
+THREE			WORD 3
+THREEHUNDO		WORD 300
+
+			END INIT_ARRAY
