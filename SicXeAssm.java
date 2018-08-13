@@ -1,7 +1,8 @@
 /* This program is a SIC/XE assembler.
  *  Written by: Isabelle Diokno
- *              Kevan Johnston
  *              Randall Jackson
+ *              Kevan Johnston
+ *              
  *  Date: 11/28/17
  */
 import java.io.*;
