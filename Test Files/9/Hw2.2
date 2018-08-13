@@ -1,0 +1,23 @@
+PART2	START 100	.Load at loc 100
+
+	LDA ZERO
+	STA INDEX	.Initialize INDEX to 0
+
+INIT_LP	LDX INDEX
+	LDA ZERO
+	STA ALPHA,X
+	LDA INDEX
+	ADD THREE
+	STA INDEX
+	COMP LIMIT
+	JLT INIT_LP	.array loop
+
+ZERO	WORD 0
+THREE	WORD 3
+LIMIT	WORD 300	.one-word constants
+
+INDEX	RESW 1		.one-word variable
+
+ALPHA	RESW 100	.array variable, 100 words
+
+	END PART2	.End the program

@@ -1,0 +1,16 @@
+.This program calculates (a+b)^2 when a=5,b=1
+SQUARING	START 100	.Load the program at memory location 100
+
+VAR-A		WORD 5		.Define a constant named VAR-A initialized to 5
+VAR-B		WORD 1		.Define a constant named VAR-B initialized to 1
+
+		LDA VAR-A	.Load accumulator(A) with 5
+		ADD VAR-B	.Add 1 to accumulator
+		STA A-PLUS-B	.Store 6 into memory location A-PLUS-B
+
+		LDA A-PLUS-B	.Load accumulator with 6
+		MUL A-PLUS-B	.Multiply accumulator content by 6
+
+A-PLUS-B	RESW 1		.Reserve a word
+
+		END SQUARING	.End of program

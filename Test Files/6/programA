@@ -1,0 +1,17 @@
+.This program performs the operation BETA + GAMMA - ALPHA when ALPHA=1, BETA=2, and GAMMA=3
+FUNCTION	START 100	.Load the program at memory location 100
+
+ALPHA	WORD 1	.Define constant named ALPHA initialized to 1
+BETA	WORD 2	.Define constant named BETA initialized to 2
+GAMMA	WORD 3	.Define constant named GAMMA initialized to 3
+
+	LDA BETA	.Load accumulator with 2
+	ADD GAMMA	.Add 3 to accumulator
+	SUB ALPHA	.Subtract 1 from accumulator
+
+	STA RESULT	.Store 4 into the memory location RESULT
+
+	LDA RESULT	.Load accumulator with 4
+
+RESULT	RESW 1	.Reserve a word
+	END FUNCTION

@@ -1,0 +1,15 @@
+PART1	START 100	.Load at loc 100
+
+	LDA BETA
+	ADD GAMMA
+	SUB ALPHA	.Perform calculations
+
+	STA RESULT	.Store (A) in RESULT
+
+RESULT	RESW 1		.one-word variables
+
+ALPHA	WORD 1
+BETA	WORD 2
+GAMMA	WORD 3		.one-word constants
+
+	END PART1	.End the program
