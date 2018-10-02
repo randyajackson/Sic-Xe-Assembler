@@ -1,4 +1,7 @@
 # Sic/Xe-Assembler
+
+Spring 2017
+
 This project is a SIC/XE assembler in JAVA
 with the requirements as mentioned below:
 
