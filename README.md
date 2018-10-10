@@ -25,7 +25,7 @@ and the object program having .obj extension.
 -The program does common types of error-checks such as incorrect
 spelling of a mnemonic, label not defined, inability to assemble because
 displacement is out of range etc.
-
+<pre>
 Example Input
 ---------------
 HW3		START 100	.Load at loc 100
@@ -91,3 +91,4 @@ T0001001E03204E0F20270320480F202407202103201B1B203F0F20150720150FA015
 T00011E0F03200F1B20330F20092B20303B2FE2
 T0001510C00000000000100000300001E
 E000100
+</pre>
